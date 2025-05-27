@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        .preloader {
+          position: fixed;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          overflow: hidden;
+          background-color: #1D1D1F;
+          
+          z-index: 1001;
+          color: #eee;
+        }
+    
+        .preloader__image {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          width: 70px;
+          height: 70px;
+          margin-top: -35px;
+          margin-left: -35px;
+          text-align: center;
+          animation: preloader-rotate 2s infinite linear;
+        }
+    
+        @keyframes preloader-rotate {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+    
+        .loaded_hiding .preloader {
+          transition: 0.3s opacity;
+          opacity: 0;
+        }
+    
+        .loaded .preloader {
+          display: none;
+        }
+      </style>
+</head>
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+      </div>
+    <header>
+        <div class="container">
+            <div class="header-wrapp">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/assets/img/Logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11.7666" cy="11.7666" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.0183 18.4851L21.5423 22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>      
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="header-ul">
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#team">Team</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner-wrapper">
+        <div class="container">
+            <div class="banner-wrapp">
+                <h1>We produce the best products</h1>
+                <p>Mattis quam, lectus et justo amet, tortor, lectus dapibus est. Habitasse efficitur sodales vel est. </p>
+                <button class="btn">Button</button>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="about-wrapper">
+        <div class="container">
+            <div class="about-wrapp">
+                <div class="about-left">
+                    <ul class="about-ul">
+                        <li>
+                            <div>
+                                <h2 class="about-h2">20,000</h2>
+                                <p class="about-p">completed projects</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2 class="about-h2">10,000</h2>
+                                <p class="about-p">prototypes</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2 class="about-h2">347</h2>
+                                <p class="about-p">completed projects</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-right">
+                    <div class="right-top">
+                        <h3>Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum. In sit odio. Tempus leo, dictum. </h2>
+                    </div>
+                    <div class="right-bot">
+                        <p>Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum. In sit odio. Tempus leo, dictum. Sit mattis mattis lorem cursus velit sit sed et vitae quam, sed nulla dapibus venenatis odio.</p>
+                        <p>Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et quam, ultricies. Dictum. Ipsum sodales sit id nec sed sodales mattis mollis quis, pellentesque habitasse ex.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/StNqF4FaD9k?si=71cfYv4p9BEFIeUz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="portfolio-wrapper">
+                <div class="portfolio-wrapp">
+                    <div class="portfolio-top">
+                        <div class="portfolio-text">
+                            <h4 class="portfolio-h4">Et odio</h4>
+                            <p>Mauris eget nec nulla dolor ex. Sodales luctus pellentesque cras ornare lorem luctus lectus sed consectetur quam, est. Libero, odi</p>
+                            <button class="btn">Button</button>
+                        </div>
+                        <div class="portfolio-picture">
+                            <img class="portfolio-img" src="/assets/img/portfolio2.jpg" alt="picture">
+                        </div>
+                    </div>
+                    <div class="portfolio-bot">
+                        <div class="portfolio-text">
+                            <h4 class="portfolio-h4">Integer dapibus dictum</h4>
+                            <p>it pulvinar tempus amet dolor dui vulputate tortor, luctus lorem in nunc eleifend ipsum justo et venenatis dictumst. </p>
+                            <button class="btn">Button</button>
+                        </div>
+                        <div class="portfolio-picture">
+                            <img class="portfolio-img" src="/assets/img/portfolio1.jpg" alt="picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="text-wrapper">
+                <div class="text-wrapp">
+                    <p class="text-title">Quoute</p>
+                    <p class="big-text">Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies. Sapien est. Dictumst. Sapien habitasse interdum in amet, lectus molestie vel ut. Malesuada efficitur mattis id mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit. </p>
+                    <p class="text-dudes">Alex Lee /<span>Co-founder & SEO</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="swiper">
+                
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <img class="big-picture" src="/assets/img/big-picture.jpg" alt="project">
+              </div>
+              <div class="swiper-slide">
+                <img class="big-picture" src="/assets/img/big-picture.jpg" alt="project">
+              </div>
+              <div class="swiper-slide">
+                <img class="big-picture" src="/assets/img/big-picture.jpg" alt="project">
+              </div>
+              
+            </div>
+            <div class="container swiper-button-wrapp">
+                
+                <div class="my-button-prev swiper-button">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 12.5L22.5 30L40 47.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="my-button-next swiper-button">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12.5L37.5 30L20 47.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </div>
+            </div>
+          
+        </div>
+        
+    </section>
+    <section>
+        <div class="container">
+            <div class="services-wrapper">
+                <div class="services-wrapp">
+                    <ul class="services-ul">
+                        <li>
+                            <p class="big-p">Branding</p>
+                            <p class="small-p">Quam, tortor, interdum consectetur eleifend integer et. Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.</p>
+                        </li>
+                        <li>
+                            <p class="big-p">Web-apps</p>
+                            <p class="small-p">Malesuada efficitur mattis id mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit. Pulvinar sed quam, arcu pulvinar nisi ipsum quis, sodales molestie ex.</p>
+                        </li>
+                        <li>
+                            <p class="big-p">Design</p>
+                            <p class="small-p">Cras amet, sed sapien orci, leo, sit ornare risus tortor, ex. Mauris non orci, sed elit. Cursus ex. Aenean ipsum dolor augue tempus et molestie ipsum adipiscing leo, sit interdum venenatis odio.</p>
+                        </li>
+                        <li>
+                            <p class="big-p">Strategy</p>
+                            <p class="small-p">Quam, tortor, interdum consectetur eleifend integer et. Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-wrapp">
+                    <div class="footer-left">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="/assets/img/Logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="footer-adres">
+                            <p>Dorivit BV, Monitorweg 1, Almere 1322BJ, Netherlands</p>
+                        </div>
+                        <div class="footer-icons">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.000488281C8.95431 0.000488281 0 8.95479 0 20.0005C0 31.0462 8.95431 40.0005 20 40.0005C31.0457 40.0005 40 31.0462 40 20.0005C40 8.95479 31.0457 0.000488281 20 0.000488281ZM22.0846 20.879V31.7601H17.5826V20.8794H15.3333V17.1297H17.5826V14.8785C17.5826 11.8195 18.8526 10.0005 22.461 10.0005H25.4651V13.7506H23.5873C22.1827 13.7506 22.0897 14.2746 22.0897 15.2526L22.0846 17.1293H25.4863L25.0883 20.879H22.0846Z" fill="white"/>
+                                        </svg>
+                                    </a>    
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40.0005C31.0457 40.0005 40 31.0462 40 20.0005C40 8.95479 31.0457 0.000488281 20 0.000488281C8.95431 0.000488281 0 8.95479 0 20.0005C0 31.0462 8.95431 40.0005 20 40.0005ZM16.3333 29.1672C16.8198 29.1672 17.0421 28.9507 17.3107 28.6892L17.3333 28.6672L19.7356 26.3313L24.7333 30.0237C25.6531 30.5311 26.3169 30.2684 26.546 29.1697L29.8268 13.7092C30.1627 12.3625 29.3135 11.7517 28.4336 12.1512L9.1686 19.5797C7.85358 20.1072 7.86125 20.8408 8.9289 21.1677L13.8727 22.7108L25.3182 15.4899C25.8585 15.1623 26.3544 15.3384 25.9474 15.6997L16.6738 24.0684L16.6737 24.0683L16.6737 24.0685L16.6733 24.0688L16.6736 24.069L16.3333 29.1672Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.0005C0 8.95479 8.95431 0.000488281 20 0.000488281C31.0457 0.000488281 40 8.95479 40 20.0005C40 31.0462 31.0457 40.0005 20 40.0005C8.95431 40.0005 0 31.0462 0 20.0005ZM16.34 19.4291V21.6005H19.9439C19.7987 22.5324 18.8546 24.3329 16.34 24.3329C14.1704 24.3329 12.4003 22.5414 12.4003 20.3338C12.4003 18.1262 14.1704 16.3348 16.34 16.3348C17.5746 16.3348 18.4007 16.8595 18.8727 17.3119L20.5975 15.6562C19.49 14.6248 18.0557 14.0005 16.34 14.0005C12.8269 14.0005 9.98557 16.8324 9.98557 20.3338C9.98557 23.8353 12.8269 26.6672 16.34 26.6672C20.0075 26.6672 22.4403 24.0976 22.4403 20.4786C22.4403 20.0624 22.3949 19.7457 22.3404 19.4291H16.34ZM28.1412 19.4291H29.9567V21.2386H28.1412V23.0481H26.3256V21.2386H24.51V19.4291H26.3256V17.6195H28.1412V19.4291Z" fill="white"/>
+                                        </svg> 
+                                    </a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <p>Id sodales interdum dui mollis non in odio</p>
+                        <form action="#" class="form-email">
+                            <input type="email" placeholder="E-MAIL" class="input-email">
+                            <button class="btn-email">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5L15 12L8 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module">
+        window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+        const swiper = new Swiper('.swiper', {
+  
+        
+        loop: true,
+
+        navigation: {
+            nextEl: '.my-button-next',
+            prevEl: '.my-button-prev',
+        },
+        });
+
+    </script>
+</body>
+</html>
